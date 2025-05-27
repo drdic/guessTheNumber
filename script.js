@@ -13,13 +13,13 @@ submitGuess.addEventListener('click', () => {
     attemptCount++;
 
     if (userGuess < 1 || userGuess > 100 || isNaN(userGuess)) {
-        resultMessage.textContent = 'Пожалуйста, введите число от 1 до 100.';
+        resultMessage.textContent = 'Введите число от 1 до 100.';
     } else if (userGuess === randomNumber) {
-        resultMessage.textContent = `Поздравляем! Вы угадали число за ${attemptCount} попыток!`;
+        resultMessage.textContent = `Умничка! Вы угадали число за ${attemptCount} попыток!`;
     } else if (userGuess < randomNumber) {
-        resultMessage.textContent = 'Слишком мало. Попробуйте снова!';
+        resultMessage.textContent = 'Больше';
     } else {
-        resultMessage.textContent = 'Слишком много. Попробуйте снова!';
+        resultMessage.textContent = 'Меньше';
     }
 
     attempts.textContent = `Попытки: ${attemptCount}`;
