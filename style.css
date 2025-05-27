@@ -1,11 +1,33 @@
-.containe {
+body {
+    background-image: url('game_1.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    background-color: rgba(255, 255, 255, 0.7);
+    background-blend-mode: lighten;
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
     text-align: center;
+    width: 350px;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+
+    /* text-align: center;
     background-color: white;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     padding: 20px;
     max-width: 350px;
-    margin: 20px auto;
+    margin: 20px auto; */
 }
 
 input[type="number"], button {
